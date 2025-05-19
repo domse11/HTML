@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello i'm Dominique</h1>
+
+    <h3>write a message:</h3>
+    <form action="" method="post">
+        <fieldset>
+            <label><input type="radio" name="geschlecht" value="m"> Männlich</label><br>
+            <label><input type="radio" name="geschlecht" value="w"> Weiblich</label><br>
+            <label><input type="radio" name="geschlecht" value="d"> Diverse</label><br>
+        </fieldset>
+        <br>
+
+        <label for="land">Wähle dein Land:</label>
+        <select name="land" id="land">
+            <option value="" disabled selected hidden>Bitte wählen</option>
+            <option value="at">Österreich</option>
+            <option value="de">Deutschland</option>
+            <option value="ch">Schweiz</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <label for="name">Name</label><br>
+            <input type="text" required id="name" name="name" minlength="5" /><br> <br>
+
+            <label for="email">Email</label><br>
+            <input type="email" required id="email" name="email" minlength="9" /> <br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" required name="message" rows="4" cols="30" minlength="10"></textarea><br><br>
+
+
+
+            <br>
+            <button type="submit">submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
